@@ -1,0 +1,239 @@
+/* styles.css */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Titan+One:400|Titillium+Web:600");
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Style for the anchor links (optional, for visual indication) */
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+
+.imageCollage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+.imageCollage_text {
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    width: 300px;
+    margin: 2px;
+}
+
+.imageCollage img {
+    height: 250px;
+    flex-grow: 1;
+    object-fit: contain;
+    margin: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Titan One", sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: antiquewhite;
+    /* background-image: url(bg.svg); */
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.sol {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 528px;
+    background-image: url(/sol.png);
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #ff29c3 100%); */
+    /* filter: blur(1px); */
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.sol2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 528px;
+    background-image: url(/sol.png);
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #ff29c3 100%); */
+    filter: blur(1px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    position: absolute;
+    width: 100vw;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+.hero {
+    /* width: 50vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* transform: translateX(-50%); */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo-img {
+    height: 150px;
+    /* Adjust the size as needed */
+}
+
+.menu {
+
+    position: absolute;
+    right: 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+
+    margin-top: 20px;
+    width: 130px;
+
+}
+
+.menu-items li {
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 130px;
+    background-color: rgb(152, 152, 29);
+    padding: 10px 0px 10px 0px;
+}
+
+.menu a {
+
+    font-family: monospace;
+    font-weight: 1000;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu li:hover {
+    background-color: orange;
+    color: #333
+}
+
+.landing-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.info-section {
+    padding: 0px;
+}
+
+.contract,
+.mail,
+.how-to-buy {
+    margin-bottom: 30px;
+}
+
+
+/* Add this to styles.css */
+/* ... (previous styles) ... */
+
+.bottom-links {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.bottom-links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.bottom-links a:hover {
+    background-color: #fff;
+    color: #333
+}
+
+
+.content-social {
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo h1 {
+        display: none;
+    }
+
+    .sol {
+        top: 20%;
+        left: 20%;
+    }
+
+    .sol2 {
+        top: 80%;
+        left: 90%;
+    }
+
+}
+
+/* ... (existing styles) ... */
+
+/* Add any additional styling as needed */
